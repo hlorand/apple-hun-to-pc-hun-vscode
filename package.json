@@ -1,8 +1,8 @@
 {
   "name": "apple-hungarian-layout-to-pc-hungarian",
-  "displayName": "apple-hungarian-layout-to-pc-hungarian",
-  "description": "This extension replaces special characters when you type on Apple’s Hungarian keyboard layout with the original characters present on a regular 101-key Hungarian keyboard, fixing the layout. The only differences are these characters: type * with AltGr+á, and type ; with AltGr+-.",
-  "version": "0.0.1",
+  "displayName": "Apple Hungarian keyboard layout to PC Hungarian keyboard layout",
+  "description": "Restores original characters on Apple’s Hungarian keyboard layout to match a standard 101-key Hungarian keyboard layout.",
+  "version": "0.0.3",
   "publisher": "hlorand",
   "license": "GPL-3.0-or-later",
   "engines": {
