@@ -1,0 +1,41 @@
+{
+  "name": "apple-hungarian-layout-to-pc-hungarian",
+  "displayName": "apple-hungarian-layout-to-pc-hungarian",
+  "description": "This extension replaces special characters when you type on Apple’s Hungarian keyboard layout with the original characters present on a regular 101-key Hungarian keyboard, fixing the layout. The only differences are these characters: type * with AltGr+á, and type ; with AltGr+-.",
+  "version": "0.0.1",
+  "publisher": "hlorand",
+  "license": "GPL-3.0-or-later",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:type"],
+  "main": "./extension.js",
+  "browser": "./extension.js",                      
+  "extensionKind": ["workspace", "ui"],           
+  "contributes": {
+    "commands": [
+      {
+        "command": "type",
+        "title": "Intercept Type"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hlorand/apple-hun-to-pc-hun-vscode.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.100.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.25.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
